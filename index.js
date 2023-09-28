@@ -17,7 +17,13 @@ function rating(number){
 }
 
 function submit(){
-    thank_you_page.style.display = "block"
-    rating_container.style.display = "none"
-    rating()
+    if(input.clicked==true){
+        thank_you_page.style.display = "block"
+        rating_container.style.display = "none"
+        rating()
+    }
+    else{
+        window.alert("Kindly choose a rating")
+    }
+    
 }
