@@ -1,0 +1,155 @@
+/* Rating page styling for mobile Start */
+
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-weight: 500;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+#rating_container{
+    border-radius: 20px;
+    margin-top: 45%;
+    margin-left: 2%;
+    justify-content: center;
+    height: 50vh;
+    width: 95%;
+    background-color: color-mix(
+        in srgb, 
+        hsl(213, 19%, 18%) 70%, 
+        transparent 30%);
+    display: flex;
+    flex-direction: column;
+}
+.container_content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.star_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background-color: color-mix(
+        in srgb, 
+        hsl(213, 19%, 18%) 95%, 
+        transparent 5%);
+}
+#star_image{
+    height: .9rem;
+    width: .9rem;
+}
+h1{
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: white;
+}
+h4{
+    color:  hsl(216, 12%, 54%);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+#number_one,#number_two,#number_three,#number_four,#number_five{
+    border-width: 0px;
+    font-weight: 900;
+    color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: color-mix(
+        in srgb, 
+        hsl(213, 19%, 18%) 95%, 
+        transparent 5%);
+}
+#number_one:hover,#number_two:hover,#number_three:hover,#number_four:hover,#number_five:hover{
+    background-color:  hsl(216, 12%, 54%);
+    color: white;
+    cursor: pointer;
+}
+#number_one:focus,#number_two:focus,#number_three:focus,#number_four:focus,#number_five:focus{
+    background-color:  hsl(25, 97%, 53%);
+    color: white;
+}
+ 
+.submit_button{
+    color: white;
+    background-color:  hsl(25, 97%, 53%);
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    border-radius: 25px;
+    font-weight: 700;
+    border-width: 0px;
+}
+.submit_button:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+/* Rating page styling for mobile --- End */
+
+/* Thank you page styling for mobile --- START */
+
+#thank_you_container{
+    border-radius: 25px;
+    margin-top: 50%;
+    margin-left: 2%;
+    text-align: center;
+    height: 50vh;
+    width: 95%;
+    background-color: color-mix(
+        in srgb, 
+        hsl(213, 19%, 18%) 95%, 
+        transparent 5%);
+    display: flex;
+    flex-direction: column;
+    
+}
+.thank_you_write_up{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+}
+
+#thank_you_image{
+    margin-top: 2rem;
+}
+.thank_you_rating{
+    font-size: 13px;
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 50%;
+    height: 1rem;
+    background-color: color-mix(
+        in srgb, 
+        hsl(213, 19%, 10%) 90%, 
+        transparent 10%);
+}
+h2{
+    color: white;
+    font-weight: 500;
+}
+.appreciation_message{
+    color: hsl(216, 12%, 54%);
+}
+
+
+
+/* Desktop Styling */
+@media only screen and (min-width:1440px) {
+    #rating_container{
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 5rem;
+    }
+}
