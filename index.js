@@ -1,7 +1,8 @@
 let body = document.querySelector("body")
-let input = document.querySelectorAll("input")
 
 let rating_container = document.getElementById("rating_container")
+
+let button_clicked = false
 
 let thank_you_page = document.getElementById("thank_you_container")
 
@@ -13,11 +14,16 @@ body = thank_you_page.style.display = "none"
 function rating(number){
     let btn_value = number.innerText;
     rate.innerHTML = btn_value
+    return button_clicked = true
     
 }
 
 function submit(){
-    thank_you_page.style.display = "block"
-    rating_container.style.display = "none"
-    rating()
+    if(button_clicked == true){
+        thank_you_page.style.display = "block"
+        rating_container.style.display = "none"
+    }
+    else{
+       return  window.alert("Kindly choose a rating")
+    }
 }
